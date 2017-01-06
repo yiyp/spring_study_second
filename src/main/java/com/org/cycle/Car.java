@@ -1,7 +1,7 @@
 package com.org.cycle;
 
 /**
- * Created by Administrator on 2017/1/6 0006.
+ * Created by yyp on 2017/1/6 0006.
  */
 public class Car {
     public Car() {
