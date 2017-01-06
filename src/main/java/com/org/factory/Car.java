@@ -1,4 +1,4 @@
-package com.org.cycle;
+package com.org.factory;
 
 /**
  * Created by yyp on 2017/1/6 0006.

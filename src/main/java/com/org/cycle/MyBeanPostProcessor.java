@@ -10,12 +10,19 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("postProcessBeforeInitialization:bean = [" + bean + "], beanName = [" + beanName + "]");
+
+        if("car".equals(beanName)) {
+            // ...
+        }
+
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("postProcessAfterInitialization:bean = [" + bean + "], beanName = [" + beanName + "]");
-        return bean;
+        Car car = new Car();
+        car.setBrand("Ford");
+        return car;
     }
 }
